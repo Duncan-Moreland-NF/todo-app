@@ -1,0 +1,2 @@
+# Docker Compose configuration — will be implemented in a later story
+version: "3.9"

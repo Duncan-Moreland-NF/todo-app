@@ -1,0 +1,30 @@
+{
+  "name": "todo-app-backend",
+  "version": "1.0.0",
+  "description": "Todo app backend API",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:int": "vitest run tests/integration",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ tests/",
+    "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.4"
+  }
+}
