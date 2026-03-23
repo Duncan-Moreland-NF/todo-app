@@ -1,9 +1,10 @@
 .app {
-  max-width: 600px;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: var(--space-xl) var(--space-md);
+  min-height: 100vh;
 }
 
 .main {
-  margin-top: 1rem;
+  margin-top: var(--space-lg);
 }

@@ -1,1 +1,51 @@
-/* TodoItem styles — will be implemented in a later story */
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+.title {
+  flex: 1;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  word-break: break-word;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  padding: var(--space-xs);
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sm);
+  opacity: 0.4;
+  transition: opacity 0.15s;
+}
+
+.deleteBtn:hover {
+  opacity: 1;
+  color: var(--color-error);
+}
